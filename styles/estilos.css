@@ -35,6 +35,8 @@
   box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.18);
 }
 
+
+
 .preview-section {
   flex: 1 1 300px;
   min-width: 300px;
@@ -60,14 +62,23 @@
   font-size: 2.2rem;
   font-weight: 700;
   color: #e50914;
+  text-decoration: none;
 }
 
 .subtitle {
+  color: #ff3c00;
   font-family: 'Jolly Lodger', cursive;
   font-size: 1.7rem;
   font-weight: 600;
-  color: #ff3c00;
   margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.subtitle-link:hover {
+  color: #ff6f00;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: color 0.3s ease, text-underline-offset 0.3s ease;
 }
 
 .btn {
@@ -139,11 +150,17 @@ header {
 }
 
 footer {
-  background-color: #222;
   color: #fff;
   padding: 2rem 1rem; /* kept from VMz69, bigger padding */
   font-size: 14px;
   text-align: center;
+  position: relative;
+  background-image:
+    linear-gradient(rgba(23, 23, 23, 0.93), rgba(23, 23, 23, 0.93)),
+    url(../images/ghost.png);
+  background-repeat: repeat;
+  background-size: 32px;
+  background-position: top left;
 }
 
 .footer-container {
@@ -198,6 +215,63 @@ footer {
   border-radius: 0.5rem;
 }
 
+  .preview-img-global {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  .contact-form-section {
+            max-width: 500px;
+            margin: 2rem auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            padding: 2rem 2.5rem;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: #b2b2b2;
+            transition: border-color 0.2s;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #0077cc;
+            outline: none;
+            background: #fff;
+        }
+        .contact-form textarea {
+            resize: vertical;
+        }
+        .contact-form .btn {
+            display: block;
+            width: 100%;
+            padding: 0.9rem 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+        }
+        .contact-form .btn:hover {
+          transition: background 0.2s;
+                }
+
 @media (max-width: 600px) {
   .card {
     margin: 1rem;
@@ -227,10 +301,18 @@ footer {
     height: auto;
     max-width: 300px;
   }
+  
 
   .article-header-img {
     margin: 1rem auto;
     height: 200px;
+  }
+
+  .sidebar {
+    position: static;
+    width: auto;
+    max-width: none;
+    margin-top: 1rem;
   }
 }
 
@@ -260,25 +342,46 @@ footer {
     margin: 1rem auto;
     height: 300px;
   }
+
+  .sidebar {
+    position: static;
+    width: auto;
+    max-width: none;
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 1025px) {
-  .card {
-    max-width: 900px;
-    margin: 2rem auto;
+  .card { max-width: 900px; margin: 2rem auto; }
+
+  #post { box-sizing: border-box;  }
+
+#post{
+    margin-right: 500px;         
+    width: min(900px, calc(100vw - 360px - 4rem));
   }
 
-  .btn {
-    flex: 1 1 30%;
-    max-width: 30%;
+  #post.card { max-width: none; }
+
+  .sidebar {
+    position: fixed;
+    top: 110px; 
+    right: 2rem;
+    width: 320px;
+    max-width: 320px;
+    margin: 0;
+    z-index: 50;
   }
 
-  .article-preview {
-    gap: 1rem;
-  }
+  .article-header-img { margin: 1rem auto; height: 400px; }
+  .article-preview { gap: 1rem; }
+  .sidebar .article-preview { align-items: center; gap: .75rem; }
+  .sidebar .preview-img { width: 80px; height: 80px; object-fit: cover; }
 
-  .article-header-img {
-    margin: 1rem auto;
-    height: 400px;
-  }
 }
+
+@media (max-width: 1024px) {
+  #post{ margin-right: 0; width: auto; }
+  .sidebar{ position: static; width: auto; max-width: none; margin-top: 1rem; }
+}
+

@@ -5,7 +5,7 @@
 # https://daw-desafio1.miltonayala.online/pages/index.html
 
 **Experiencia de Aprendizaje 2**  
-📅 **Fecha de entrega oficial:** 17 de agosto de 2025  
+📅 **Fecha de entrega oficial:** Domingo 17 de agosto de 2025 | Antes de las 2 PM
 🕣 **Revisión interna:** 14 de agosto a las 8:30 PM  
 📊 **Ponderación:** 15%
 
