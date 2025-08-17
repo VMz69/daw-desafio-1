@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <title>title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/estilos.css" />
     <link rel="stylesheet" href="../../styles/grilla.css" />
+    <link rel="stylesheet" href="../../styles/estilos.css" />
     <link rel="stylesheet" href="../../styles/icons.css" />
     <link rel="stylesheet" href="../../styles/articulos_style.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -41,24 +41,61 @@
     </div>
     <!--fin de codigo navbar-->
     <!--Comienzo de contenido-->
-    <main class="main-content">
-        <section class="preview-section">
-            <article class="preview-article">
-                <img src="../../images/logo-variante.png" alt="Logo del blog" class="preview-img-global"/>
-                <h2 class="subtitle">Sobre Nosotros</h2>
-                <p class="line-spacing">
-                    Nuestro blog nació de la pasión por las leyendas urbanas y los relatos de terror que circulan en El
-                    Salvador. Un grupo de amigos, amantes de las historias inquietantes y la cultura salvadoreña, decidió
-                    crear este espacio para recopilar, compartir y reinventar los mitos que nos han acompañado desde la
-                    infancia.<br><br>
-                    Aquí, los “storytellers” somos estudiantes, escritores aficionados y curiosos que buscan dar vida a los
-                    relatos más escalofriantes, mezclando tradición con un toque moderno. Cada historia publicada es fruto
-                    de la colaboración y el deseo de mantener viva la magia y el misterio de nuestro país.<br><br>
-                    Si te apasionan los cuentos de miedo y quieres conocer más sobre quiénes somos o cómo puedes participar,
-                    ¡este es tu lugar!
-                </p>
-            </article>
+    <main class="main-content contact-us">
+        <section class="contact-info">
+            <h1 class="title">Contáctanos</h1>
+            <p class="line-spacing">¿Tienes preguntas, sugerencias o quieres compartir una historia? ¡Estamos aquí para
+            escucharte!</p>
+            <br>
+            <ul class="contact-details">
+            <li><strong>Teléfono:</strong> +503 7123-4567 / +503 7890-1234</li>
+            <li><strong>Email:</strong> contacto@leyendaselsalvador.sv</li>
+            <li><strong>Dirección:</strong> Calle Ficticia #123, San Salvador, El Salvador</li>
+            </ul>
+            <br>
+            <h4 class="subtitle">Síguenos</h4>
+            <div class="social-icons" style="text-align: left; display: block;">
+            <a class="link" href="https://x.com/" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-x-twitter"></i></a>
+            <a class="link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-youtube"></i></a>
+            <a class="link" href="https://www.tiktok.com/explore" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-tiktok"></i></a>
+            </div>
+            <br>
+            <h4 class="subtitle">Ubicación</h4>
+            <div class="map-container" style="margin-top: 1rem;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.993017717983!2d-89.21819168477144!3d13.69899399038737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330b6e6e6e6e7%3A0x123456789abcdef!2sCalle%20Ficticia%20%23123%2C%20San%20Salvador%2C%20El%20Salvador!5e0!3m2!1ses!2ssv!4v1718130000000!5m2!1ses!2ssv"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
+        <section class="contact-form-section">
+            <h2 class="subtitle">Envíanos un mensaje</h2>
+            <form action="../../pages/confirmation.html" method="get" class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+            
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+            
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required />
+            
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+        <!--
+        <style>
+        
+        </style>
+        -->
     </main>
     <!--inicio de codigo footer-->
     <footer>
