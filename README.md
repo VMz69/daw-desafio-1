@@ -1,8 +1,5 @@
 # 🖥️ Desafío Práctico 1 – DAW901
 
-# Release Principal para ver el sitio web LIVE!
-
-# https://daw-desafio1.miltonayala.online/pages/index.html
 
 **Experiencia de Aprendizaje 2**  
 📅 **Fecha de entrega oficial:** Domingo 17 de agosto de 2025 | Antes de las 2 PM
@@ -61,20 +58,3 @@ Debes utilizar estos nombres en las clases de los elementos para que el formato 
 
 ---
 
-## 👥 División del trabajo (Grupos de 5)
-
-A continuación se proponen tareas clave para repartir entre los miembros del grupo. Se pueden combinar según disponibilidad o experiencia:
-
-1. **Crear barra de navegación y encabezado con imagen**
-2. **Crear footer o pie de página**
-3. **Crear la plantilla de artículos**
-4. **Creación de mediaqueries** (para hacer el sitio responsive)
-5. **Creación de repositorio en GitHub**
-6. **Definir paleta de colores** (para mantener coherencia visual)
-7. **QA & UAT** (pruebas de calidad y pruebas de aceptación de usuario)
-8. **Llenar la información de los artículos**
-9. **Definir la temática de la página web**
-
----
-
-¡Mucho éxito, equipo! 💪
